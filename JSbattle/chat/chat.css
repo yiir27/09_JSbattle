@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+}
+.wrap {
+    width: 600px;
+    min-height: 800px;
+    margin: 0 auto;
+    background-color: rgb(204, 167, 239);
+    padding-top: 10px;
+    color: black;
+    font-size: 1rem;
+    line-height: 150%;
+    border-radius: 15px;
+}
+.name {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+#prof {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+#uname {
+    color: brown;
+    font-weight: bold;
+}
+#out {
+    margin-left: auto;
+    margin-right: 30px;
+}
+#output {
+    height: 85vh;
+    margin: 0 30px;
+    overflow-x: hidden;
+}
+.my_msg {
+    padding: 24px 24px 15px 24px;
+    background-color: aquamarine;
+    width: 60%;
+    position: relative;
+    margin: 0 15px 1.5em 0;
+}
+.my_msg:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -15px;
+    border: 8px solid transparent; /*境界線の色が透明*/
+    border-left: 16px solid red;
+}
+.other_msg {
+    padding: 24px 24px 15px 24px;
+    background-color: rgb(127, 159, 255);
+    width: 60%;
+    position: relative;
+    margin: 0 0 1.5em 25px;
+    border-radius: 10px;
+}
+.other_msg:before {
+    content: "";
+    position: absolute;
+    left: -22px;
+    margin-top: -6px;
+    border: 8px solid transparent;
+    border-right: 16px solid royalblue;
+}
+
+.box {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.textbox {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+#text {
+    width: 530px;
+    padding: 10px;
+    background-color: beige;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+#send {
+    display: block;
+    height: 50px;
+}
+.n {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 0.8rem;
+}
+button {
+    border: none;
+    background-color: chartreuse;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.del {
+    display: flex;
+}
+.ymd{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.btn {
+    margin-left: 10px;
+}
+.icon {
+    border-radius: 25px;
+}

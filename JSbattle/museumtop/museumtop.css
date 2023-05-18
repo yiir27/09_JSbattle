@@ -1,0 +1,249 @@
+body {
+    cursor: url(../museumtop/cursor.png), auto;
+}
+.box-1 {
+    /* background-color: black; */
+    margin: 18px;
+    display: flex;
+    height: 300px;    
+}
+.textbox-1 {
+    /* color: aliceblue; */
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+.textbox-1 p {
+    padding-left: 50px;
+    padding-top: 100px;
+}
+.img_b1 {
+    background: url(../museumtop/gaku/gaku01.png);
+    width: 500px;
+    height: 300px;
+    margin: 0 0 0 auto
+}
+.img_b1 img {
+    margin: 29px;
+}
+.box-2 {
+    margin: 18px;
+    display: flex;
+    height: 300px;
+    justify-content: space-between;    
+}
+.textbox-2 {
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+.textbox-2 p {
+    padding-right: 40px;
+    line-height: 1.5em;
+}
+.img_b2 {
+    background: url(../museumtop/gaku/gaku2.png);
+    width: 500px;
+    height: 300px;
+    margin: auto 0 0 0;
+}
+.img_b2 img {
+    padding: 30px;
+}
+.box-3 {
+    /* background-color: black; */
+    margin: 18px;
+    display: flex;
+    height: 300px;    
+}
+.textbox-3 {
+    /* color: aliceblue; */
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+.textbox-3 p {
+    padding-left: 40px;
+    line-height: 1.8em;
+}
+.img_b3 {
+    background: url(../museumtop/gaku/gaku3.png);
+    width: 500px;
+    height: 300px;
+    margin: 0 0 0 auto;
+}
+.img_b3 img {
+    padding: 31px;
+}
+.box-4 {
+    margin: 18px;
+    display: flex;
+    height: 300px;
+    justify-content: space-between;    
+}
+.textbox-4 {
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+.textbox-4 p {
+    padding-top: 30px;
+    padding-right: 40px;
+    line-height: 2.5em;
+}
+.img_b4 {
+    background: url(../museumtop/gaku/gaku4.png);
+    width: 500px;
+    height: 300px;
+}
+.img_b4 img {
+    padding: 30px;
+}
+.box-5 {
+    /* background-color: black; */
+    margin: 18px;
+    display: flex;
+    height: 300px;    
+}
+.textbox-5 {
+    /* color: aliceblue; */
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+.textbox-5 p {
+    padding-top: 10px;
+    padding-left: 40px;
+    line-height: 1.9em;
+}
+.img_b5 {
+    background: url(../museumtop/gaku/gaku5.png);
+    width: 500px;
+    height: 300px;
+    margin: 0 0 0 auto;
+}
+.img_b5 img {
+    padding: 30px;
+}
+.box-2 {
+    margin: 18px;
+    display: flex;
+    height: 300px;    
+}
+.box-6 {
+    margin: 18px;
+    display: flex;
+    height: 300px;
+    justify-content: space-between;    
+}
+.textbox-6 {
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+.textbox-6 p {
+    padding-top: 30px;
+    padding-right: 40px;
+    line-height: 2em;
+    text-align: center;
+}
+.img_b6 {
+    background: url(../museumtop/gaku/gaku6.png);
+    width: 500px;
+    height: 300px;
+}
+.img_b6 img {
+    padding: 30px;
+}
+
+.header {
+    display: flex;
+}
+/* ハンバーガーメニュー */
+/* ボタン外側 */
+.menu {
+    position: relative;
+    background: rgb(208, 162, 223);
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+/* ボタン内側 */
+.menu span {
+    display: inline-block;
+    transition: all .4s; /*アニメーション設定*/
+    position: absolute;
+}
+.menu span:nth-of-type(2){
+    top: 12px;
+    font-size: 14px;
+    padding: 3px;
+    color: brown;
+}
+/* バツになる */
+.menu.active span:nth-of-type(1) {
+    top: 18px;
+    left: 13px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 50%;
+    background: brown;
+    height: 2px;
+}
+.menu.active span:nth-of-type(2) {
+    opacity: 0;
+}
+.menu.active span:nth-of-type(3) {
+    top: 30px;
+    left: 13px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 50%;
+    background: brown;
+    height: 2px;
+}
+/* ヘッダーのナビ部分 */
+.nav {
+    display: none;
+}
+.nav.active {
+    display: block;
+}
+.n_item {
+    position: absolute;
+    width: 130px;
+    height: 200px;
+    background-color: rgb(208, 162, 223);
+    border-radius: 5px;
+}
+ul, li {
+    list-style: none;
+}
+.item {
+    display: block;
+    font-size: 20px;
+    margin-top: 24px;
+}
+.item a{
+    color: brown;
+}
+
+/* ログイン名表示 */
+.user {
+    display: flex;
+}
+#prof {
+    padding-top: 2px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+#uname {
+    padding: 16px 0 0 10px;
+}
